@@ -1,1 +1,2 @@
 add_lunch_combo kenzo-userdebug
+add_lunch_combo hydrogen-userdebug
