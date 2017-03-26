@@ -12,8 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Add Stock Lollipop bootanimation based on device
+# Add stock nougat bootanimation based on device
 ifneq ($(filter kenzo,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
+endif
+ifneq ($(filter hydrogen,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
