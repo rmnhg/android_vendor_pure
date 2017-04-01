@@ -3,3 +3,5 @@ add_lunch_combo hydrogen-userdebug
 add_lunch_combo osprey-userdebug
 add_lunch_combo surnia-userdebug
 add_lunch_combo A6020-userdebug
+add_lunch_combo victara-userdebug
+add_lunch_combo condor-userdebug
