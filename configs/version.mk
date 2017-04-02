@@ -14,7 +14,7 @@
 
 #PureNexus versioning
 ifndef PURE_BUILD_TYPE
-    PURE_BUILD_TYPE := UNOFFICIAL
+    PURE_BUILD_TYPE := CAF
 endif
 
 # GAPPS
