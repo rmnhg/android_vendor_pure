@@ -16,3 +16,4 @@ add_lunch_combo s2-userdebug
 add_lunch_combo surnia-userdebug
 add_lunch_combo victara-userdebug
 add_lunch_combo x2-userdebug
+add_lunch_combo harpia-userdebug
