@@ -13,6 +13,10 @@
 
 IS_ARM64 := true
 
+# Screen
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_LENGTH := 1920
+
 # Include pure telephony configuration
 include vendor/pure/configs/pure_phone.mk
 
