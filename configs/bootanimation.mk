@@ -13,15 +13,20 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
-ifneq ($(filter addison athene hydrogen kenzo kipper lux oneplus3 onyx potter s2 victara z2_plus,$(TARGET_PRODUCT)),)
+ifeq ($(TARGET_SCREEN_WIDTH), 1080)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter condor falcon ido merlin osprey otus surnia harpia,$(TARGET_PRODUCT)),)
+ifeq ($(TARGET_SCREEN_WIDTH), 720)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter axon7 x2,$(TARGET_PRODUCT)),)
+ifeq ($(TARGET_SCREEN_WIDTH), 1440)
     PRODUCT_COPY_FILES += \
         vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
-endif       
+endif
+
+ifeq ($(TARGET_SCREEN_WIDTH),)
+ $(info $TARGET_SCREEN_WIDTH is undefined, continuing with Nougat bootanimation)
+endif
+
