@@ -26,6 +26,11 @@ ifeq ($(TARGET_SCREEN_WIDTH), 1440)
         vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
 
+ifneq ($(filter flamingo,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/pure/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
+endif
+
 ifeq ($(TARGET_SCREEN_WIDTH),)
  $(info $TARGET_SCREEN_WIDTH is undefined, continuing with Nougat bootanimation)
 endif
