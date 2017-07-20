@@ -16,7 +16,7 @@
 include vendor/pure/configs/pure_phone.mk
 
 # Inherit AOSP device configuration for flamingo
-$(call inherit-product, device/motorola/osprey/aosp_flamingo.mk)
+$(call inherit-product, device/sony/flamingo/aosp_flamingo.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := flamingo
