@@ -26,9 +26,9 @@ ifeq ($(TARGET_SCREEN_WIDTH), 1440)
         vendor/pure/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
 endif
 
-ifneq ($(filter flamingo,$(TARGET_PRODUCT)),)
+ifeq ($(TARGET_SCREEN_WIDTH), 480)
     PRODUCT_COPY_FILES += \
-        vendor/pure/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
+        vendor/pure/prebuilt/bootanimation/480.zip:system/media/bootanimation.zip
 endif
 
 ifeq ($(TARGET_SCREEN_WIDTH),)
