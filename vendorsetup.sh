@@ -19,3 +19,4 @@ add_lunch_combo x2-userdebug
 add_lunch_combo harpia-userdebug
 add_lunch_combo z2_plus-userdebug
 add_lunch_combo flamingo-userdebug
+add_lunch_combo idol3-userdebug
